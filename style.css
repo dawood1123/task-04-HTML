@@ -170,7 +170,7 @@ section p{
     padding: 30px;
     background-color: #ffffff;
     margin: 10px;
-    border: 2px solid #436e92;
+    border: 2px solid #2b2912;
 }
 
 .card-img-top{
@@ -214,6 +214,52 @@ background-color: #ffffff;
     transform: scale(1.1); /* Scale the button by 10% on hover */
     transition: 0.5s;
 }
+
+/* Connect */
+
+.connect{ 
+    margin-top: 50px;
+    background-color: #eae8fa;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    height: 170px;
+    margin-bottom: 50px;
+}
+
+.connect h3{ 
+    padding-bottom: 20px;
+    background-color: #eae8fa;
+}
+
+.connect img{ 
+    width: 30px;
+    background-color: #ffffff
+
+}
+
+/* Footer */
+footer{ 
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+footer p{ 
+    font-size: medium;
+}
+
+footer :first-child{ 
+font-size: large; 
+}
+
+footer div a{ 
+    color: #000; 
+    display: block;
+    font-size: medium;
+}
+
 
 /* For mobile responsiveness */
 @media(max-width: 420px){
