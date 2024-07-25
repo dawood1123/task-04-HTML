@@ -24,22 +24,23 @@ nav{
     justify-content: space-evenly;
     position: sticky;
     top: 0;
-    background-color: #ffc2d5;
+    background-color: #76dfaa;
     height: 40px;
 }
 
 
 nav a{ 
-    color: #ee2b69;
+    color: #0c593b;
     text-decoration: none;
     align-content: center;
+    font-weight: bolder;
 }
 
 nav a:hover {
     transform: scale(1.1); /* Scale the button by 10% on hover */
     transition: 0.5s;
     color: #ffffff;
-    background-color: #ee2b69;
+    background-color: #0c704a;
     border-radius: 3px;
     width: 100px;
     text-align: center;
@@ -94,7 +95,7 @@ section p{
     padding-top: 30px;
     padding-left: 10px;
     padding-bottom: 20px;
-    color: #ee2b69;
+    color: #0c704a;
     text-align: center
 }
 .group-cards{
@@ -132,8 +133,8 @@ section p{
 
 .books button{ 
     background-color: rgb(255, 255, 255);
-    color: #ee2b69; 
-    border: 2px solid #ee2b69;
+    color: #0c704a; 
+    border: 2px solid #0c704a;
     border-radius: 4px;
     width: 100px;
     height: 5vh;
@@ -160,7 +161,7 @@ section p{
     padding-bottom: 30px;
     font-size: x-large;
     margin-bottom: 50px;
-    color: #ee2b69;
+    color: #0c704a;
     text-align: center;
     }
 
@@ -197,7 +198,7 @@ background-color: #ffffff;
 
 .card button {
     background-color: #ffffff;
-    color: #ee2b69;
+    color: #0c704a;
     height: 7vh;
     width: 10vw;
     display: flex;
@@ -206,7 +207,7 @@ background-color: #ffffff;
     align-items: center; /* This centers vertically */
     border-radius: 3px;
     margin-bottom: 10px;
-    border: 1px solid #ee2b69;
+    border: 2px solid #0c704a;
     text-align: center; /* You can keep this for text alignment */
 }
 
@@ -219,7 +220,7 @@ background-color: #ffffff;
 
 .connect{ 
     margin-top: 50px;
-    background-color: #eae8fa;
+    background-color: #76dfaa;
     width: 80%;
     display: block;
     margin: 0 auto;
@@ -230,13 +231,13 @@ background-color: #ffffff;
 
 .connect h3{ 
     padding-bottom: 20px;
-    background-color: #eae8fa;
+    background-color: #76dfaa;
 }
 
 .connect img{ 
     width: 30px;
-    background-color: #ffffff
-
+    background-color: transparent; 
+    margin-left: 15px;
 }
 
 /* Footer */
@@ -255,11 +256,75 @@ font-size: large;
 }
 
 footer div a{ 
-    color: #000; 
+    color: black; 
     display: block;
+    font-size: medium;
+    text-decoration: none;
+}
+
+footer img{ 
+    margin-top: 0 ;
+    width: 170px;
+}
+
+.copyright{ 
+    margin-top: 70px;
+    text-align: center;
+}
+
+.copyright p { 
+    color: rgb(82, 82, 82);
     font-size: medium;
 }
 
+/* PC */
+
+@media(max-width: 900px){
+    .home img{ 
+        margin-left: 20px;
+        width: 350px;
+        margin-top: 20px;
+    }
+
+    .home h2{ 
+        font-size: 30px;
+        font-weight: 700px;
+    }
+
+    .group-cards{
+        display: grid;
+        justify-content: space-evenly;
+    }
+    .books{ 
+        margin-bottom: 10px;
+    }
+    .books button{
+        width: 15vw;
+        height: 4vw;
+    }
+    
+    .card-group{ 
+        display: grid;
+    }
+
+
+    .card-group .card-title{ 
+        font-size: 1vw ;
+        padding-top: 10px;
+    }
+
+    footer p{ 
+        font-size: 1vw;
+    }
+
+    footer div p { 
+        font-size: 2vw;
+    }
+
+    footer img{ 
+        width: 20%;
+    }
+}
 
 /* For mobile responsiveness */
 @media(max-width: 420px){
@@ -353,15 +418,43 @@ margin-left: 22px;
 }
 .card button{
     background-color: #ffffff;
-    color: #ee2b69;
+    color: #0c704a;
     width: 20vw;
     height: 5vh;
     display: block;
     margin: 0 auto;
-    border: 1px solid #ee2b69;
+    border: 1px solid #0c704a;
     border-radius: 3px;
     font-size: smaller;
 }
+
+/* Connect */
+.connect img { 
+    width: 22px;
+}
+.connect h3{ 
+    font-size: medium;
+}
+
+
+/* Footer */
+
+footer img{ 
+    display: none;
+}
+footer{ 
+    justify-content: space-evenly;
+}
+footer p{ 
+    font-size: 3vw;
+}
+footer div :first-child{ 
+    font-size: 3vw;
+}
+footer div a { 
+    font-size: 3vw; 
+}
+
 
 }
 
